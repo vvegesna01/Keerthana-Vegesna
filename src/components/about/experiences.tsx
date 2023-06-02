@@ -24,7 +24,7 @@ const Experiences: React.FC = () => {
       role: "Undergraduate Data Science Researcher | Merck RFID Team",
       description:
         "Collaborated with Merck to create a web-based inventory tracking system using QR codes to optimize drug development. Worked on the backend team to setup a common database using AWS S3 and databricks to analyze the data. Helped come up with the solution architecture for the implementation.",
-      image: "/images/exp/dm-logo.png",
+      image: "/images/exp/Merck.png",
     },
     {
       duration: "AUG 2021 - JAN 2022",
@@ -32,7 +32,7 @@ const Experiences: React.FC = () => {
       role: "Undergraduate Teaching Assistant",
       description:
         "Assisted over 600 students in The Data Mine during office hours. Helped students with assignments on Bash, SQL, Unix, R, Python and SQL",
-      image: "/images/exp/dm-logo.png",
+      image: "/images/exp/dm_dr_photo.jpeg",
     },
     // Add more experiences here...
 
@@ -53,7 +53,7 @@ const Experiences: React.FC = () => {
               alt="Experience"
 			  height={100}
 			  width={150}
-              className="w-24 h-24 object-contain rounded-full"
+              className="w-48 h-48 object-contain rounded-sm"
             />
             <div className="text-localhost_text">
               <div className="text-lg font-semibold text-gray-700">{experience.duration}</div>
