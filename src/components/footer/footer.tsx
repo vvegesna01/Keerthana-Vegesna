@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
           </Link>
         </div>
         <div className="">
-          <Link href="https://github.com/">
+          <Link href="https://github.com/vvegesna01">
             <div className="group">
               <FaGithub
                 size="35"
@@ -43,7 +43,7 @@ const Footer: React.FC = () => {
           </Link>
         </div>
         <div className="">
-          <Link href="mailto:example@gmail.com">
+          <Link href="mailto:vvegesna@purdue.edu">
             <div className="group">
               <SiGmail
                 size="35"

@@ -1,4 +1,4 @@
-import ProfileBrief from '@/components/ProfileBrief'
+import ProfileBrief from '@/components/home/ProfileBrief'
 import Image from 'next/image'
 
 export default function Home() {

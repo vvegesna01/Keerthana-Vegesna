@@ -1,7 +1,9 @@
+
 import './globals.css'
 import { Inter, Work_Sans } from 'next/font/google'
 import Navbar from '@/components/navbar/navbar'
 import Footer from '@/components/footer/footer'
+
 
 const inter = Work_Sans({weight: "400", subsets: ['latin'] })
 
