@@ -1,4 +1,5 @@
 import ProfileBrief from '@/components/home/ProfileBrief'
+import ProjectsBrief from '@/components/home/ProjectsBrief'
 import Image from 'next/image'
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col justify-between p-30">
        <div> 
         <ProfileBrief/> 
+        {/* <ProjectsBrief/> */}
         </div>
 
     </main>

@@ -5,7 +5,7 @@ import React from "react";
 
 export default function Experience() {
 	return (
-		<div className="flex flex-col p-24">
+		<div className="flex flex-col p-10">
 			{/* <UnderConstruction /> */}
 			<Experiences />
 		</div>

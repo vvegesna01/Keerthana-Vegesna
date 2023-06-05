@@ -1,9 +1,7 @@
 import React from "react";
-import profileImg from "images/profile.jpg";
 import Image from 'next/image';
-import UnderConstruction from "@/app/constr";
 
-export default function ProfileBrief() {
+const ProfileBrief: React.FC = () => {
   return (
     <div className="flex flex-col items-center m-5">
       <div className="flex flex-col-reverse items-center md:flex-row">
@@ -17,7 +15,7 @@ export default function ProfileBrief() {
           />
         </div>
         <div className="md:w-3/4">
-          <h1 className="text-localhost_text text-xl leading-10 ml-10 animate-fadeIn font-extrabold">
+          <h1 className="text-xl leading-10 ml-10 animate-fadeIn font-extrabold text-indigo-900 hover:text-purple-500 transition-colors duration-300">
             SOFTWARE ENGINEER | UNDERGRADUATE TEACHING ASSISTANT | MUSICIAN
           </h1>
           <h1 className="text-localhost_text text-lg leading-10 ml-10 mt-5 animate-fadeIn">
@@ -25,7 +23,8 @@ export default function ProfileBrief() {
           </h1>
         </div>
       </div>
-      <UnderConstruction />
-    </div>
+</div>
   );
-}
+};
+
+export default ProfileBrief;

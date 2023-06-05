@@ -10,7 +10,8 @@ module.exports = {
       colors: {
         localhost_text: "#000000",
         purdue_color:"#CEB888",
-        links_color: "#56a0c4"
+        links_color: "#88aace"
+
       },
       animation: {
         fadeIn: 'fadeIn 1s ease-in-out',
