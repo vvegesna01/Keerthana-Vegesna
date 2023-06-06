@@ -25,7 +25,7 @@ export default function AboutMe() {
 
           <div className="flex flex-col p-5">
             <p className="text-localhost_text leading-8 text-lg py-3 animate-fadeIn">
-              Hi there! I'm Keerthana and I'm currently a senior at{" "}
+              Hi there! I&apos;m Keerthana and I&apos;m currently a senior at{" "}
               <Link href="https://www.purdue.edu/" className="text-purdue_color font-semibold underline transition duration-300 hover:text-blue-500">Purdue University</Link>{" "}
               studying Computer Science. I am driven by a curiosity to explore new technologies and find innovative solutions and am excited to continue my journey in computer science, constantly learning and growing.
             </p>
@@ -42,7 +42,7 @@ export default function AboutMe() {
               I have also had the opportunity to contribute as an Undergraduate Student Researcher for{" "}
               <Link href="https://datamine.purdue.edu/corporate/merck/" className="text-links_color font-semibold underline transition duration-300 hover:text-blue-500">Merck</Link>{" "}
               through the{" "}
-              <Link href="https://datamine.purdue.edu/corporate/" className="text-links_color font-semibold underline transition duration-300 hover:text-blue-500">The Data Mine Corporate Partner's Program</Link>.
+              <Link href="https://datamine.purdue.edu/corporate/" className="text-links_color font-semibold underline transition duration-300 hover:text-blue-500">The Data Mine Corporate Partner&apos;s Program</Link>.
               I also participated in the{" "}
               <Link href="https://www.cs.purdue.edu/diversity/womens-history/girls-who-code.html" className="text-links_color font-semibold underline transition duration-300 hover:text-blue-500">Girls Who Code</Link>{" "}
               College Loop and as part of the{" "}
@@ -50,7 +50,7 @@ export default function AboutMe() {
               Logistics team, helped organize the 2020 TEDx event.
             </p>
             <p className="text-localhost_text leading-8 text-lg py-3 animate-fadeIn">
-              I'm originally from Bangalore, India and enjoy songwriting, reading, hiking, and photography in my free time.
+              I&apos;m originally from Bangalore, India and enjoy songwriting, reading, hiking, and photography in my free time.
             </p>
           </div>
         </div>
