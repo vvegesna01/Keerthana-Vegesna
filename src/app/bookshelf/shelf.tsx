@@ -1,5 +1,6 @@
-import React from "react";
-import Image from 'next/image';
+"use client";
+import React, { useEffect, useState } from "react";
+import Image from "next/image";
 
 const Shelf: React.FC = () => {
   const books = [
@@ -16,16 +17,41 @@ const Shelf: React.FC = () => {
     // Add more books here
   ];
 
+  const [gridColumns, setGridColumns] = useState("");
+
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+
+      if (width <= 640) {
+        setGridColumns("1fr");
+      } else if (width <= 768) {
+        setGridColumns("repeat(2, 1fr)");
+      } else if (width <= 1024) {
+        setGridColumns("repeat(3, 1fr)");
+      } else {
+        setGridColumns("repeat(5, 1fr)");
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className="bg-gray-100 p-4">
-      <div className="grid grid-cols-5 gap-4">
+      <div className="grid" style={{ gridTemplateColumns: gridColumns }} gap-4>
         {books.map((book, index) => (
           <div
             key={index}
-            className="relative overflow-hidden transition-transform duration-300 transform hover:scale-105"
+            className="relative overflow-hidden transition-transform duration-300 transform hover:scale-105 m-5"
           >
             <Image src={book.image} alt={book.title} width={200} height={150} className="w-fit h-full" />
-            <div className="absolute bottom-0 inset-x-0 bg-gray-900 text-white py-1 px-2 text-sm font-medium">
+            <div className="absolute bottom-0 inset-x-0 bg-gray-900 text-white py-1 px-2 text-sm font-sm">
               {book.title}
             </div>
           </div>
