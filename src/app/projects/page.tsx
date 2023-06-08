@@ -72,7 +72,7 @@ const Projects: React.FC = () => {
           <div className="flex flex-col sm:flex-row items-center">
             <div className="w-full sm:w-1/2 mb-5 sm:mb-0">
               <Image
-                src="/images/projects/eras-tour.png"
+                src="/images/projects/eras_tour.png"
                 alt="Project"
                 height={600}
                 width={800}

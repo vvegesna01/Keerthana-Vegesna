@@ -25,26 +25,26 @@ const Navbar: React.FC = () => {
             <button
               type="button"
               onClick={toggleMobileMenu}
-              className="text-indigo-900 hover:text-transparent hover:bg-gradient-to-r hover:bg-clip-text hover:from-purple-500 hover:to-indigo-500 transition duration-300 transform hover:-translate-y-1 hover:scale-100 m-5"
+              className="text-indigo-900 hover:text-transparent hover:bg-gradient-to-r hover:bg-clip-text hover:from-purple-500 hover:to-indigo-500 transition duration-300 transform hover:-translate-y-1 hover:scale-120 m-5"
             >
               ☰
             </button>
           </nav>
           <ul className={`flex flex-col items-center ${isMobileMenuOpen ? 'flex' : 'hidden'} md:flex md:flex-row space-x-4 text-localhost_text`}>
             <li>
-              <a href="/about" className="text-indigo-900 hover:text-transparent hover:bg-gradient-to-r hover:bg-clip-text hover:from-purple-500 hover:to-indigo-500 transition duration-300 transform hover:-translate-y-1 hover:scale-100">ABOUT</a>
+              <a href="/about" className="text-indigo-900 text-2xl hover:text-transparent hover:bg-gradient-to-r hover:bg-clip-text hover:from-purple-500 hover:to-indigo-500 transition duration-300 transform hover:-translate-y-1 hover:scale-120">ABOUT</a>
             </li>
             <li>
-              <a href="/projects" className="text-indigo-900 hover:text-transparent hover:bg-gradient-to-r hover:bg-clip-text hover:from-purple-500 hover:to-indigo-500 transition duration-300 transform hover:-translate-y-1 hover:scale-100">PROJECTS</a>
+              <a href="/projects" className="text-indigo-900 text-2xl hover:text-transparent hover:bg-gradient-to-r hover:bg-clip-text hover:from-purple-500 hover:to-indigo-500 transition duration-300 transform hover:-translate-y-1 hover:scale-120">PROJECTS</a>
             </li>
             <li>
-              <a href="/experience" className="text-indigo-900 hover:text-transparent hover:bg-gradient-to-r hover:bg-clip-text hover:from-purple-500 hover:to-indigo-500 transition duration-300 transform hover:-translate-y-1 hover:scale-100">EXPERIENCE</a>
+              <a href="/experience" className="text-indigo-900 text-2xl hover:text-transparent hover:bg-gradient-to-r hover:bg-clip-text hover:from-purple-500 hover:to-indigo-500 transition duration-300 transform hover:-translate-y-1 hover:scale-120">EXPERIENCE</a>
             </li>
             <li>
-              <a href="/bookshelf" className="text-indigo-900 hover:text-transparent hover:bg-gradient-to-r hover:bg-clip-text hover:from-purple-500 hover:to-indigo-500 transition duration-300 transform hover:-translate-y-1 hover:scale-100">BOOKSHELF</a>
+              <a href="/bookshelf" className="text-indigo-900 text-2xl hover:text-transparent hover:bg-gradient-to-r hover:bg-clip-text hover:from-purple-500 hover:to-indigo-500 transition duration-300 transform hover:-translate-y-1 hover:scale-120">BOOKSHELF</a>
             </li>
             <li>
-              <a href="/contact" className="text-indigo-900 hover:text-transparent hover:bg-gradient-to-r hover:bg-clip-text hover:from-purple-500 hover:to-indigo-500 transition duration-300 transform hover:-translate-y-1 hover:scale-100">CONTACT</a>
+              <a href="/contact" className="text-indigo-900 text-2xl hover:text-transparent hover:bg-gradient-to-r hover:bg-clip-text hover:from-purple-500 hover:to-indigo-500 transition duration-300 transform hover:-translate-y-1 hover:scale-120">CONTACT</a>
             </li>
           </ul>
         </div>
