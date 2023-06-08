@@ -18,7 +18,7 @@ const ProfileBrief: React.FC = () => {
           <h1 className="text-xl leading-10 ml-10 animate-fadeIn font-extrabold text-indigo-900 hover:text-purple-500 transition-colors duration-300">
             SOFTWARE ENGINEER | UNDERGRADUATE TEACHING ASSISTANT | MUSICIAN
           </h1>
-          <h1 className="text-localhost_text text-lg leading-10 ml-10 mt-5 animate-fadeIn">
+          <h1 className="text-localhost_text text-2xl leading-10 ml-10 mt-5 p-10 animate-fadeIn">
             Hi! I&apos;m Keerthana, a senior at Purdue University studying Computer Science. I am passionate about solving complex problems through software development and leveraging data to drive insights. I am driven by a curiosity to explore new technologies and find innovative solutions and am excited to continue my journey in computer science, constantly learning and growing.
           </h1>
         </div>

@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from 'next/image';
 
 const ProjectCarousel: React.FC = () => {
@@ -60,9 +60,8 @@ const ProjectCarousel: React.FC = () => {
                       <Image
                         src={project.imageSrc}
                         alt={project.title}
-                        layout="responsive"
-                        width="400"
-                        height="300"
+                        width={"400"}
+                        height={"300"}
                         className="object-cover rounded-md"
                       />
                     </div>
