@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
             <button
               type="button"
               onClick={toggleMobileMenu}
-              className="text-indigo-900 hover:text-transparent hover:bg-gradient-to-r hover:bg-clip-text hover:from-purple-500 hover:to-indigo-500 transition duration-300 transform hover:-translate-y-1 hover:scale-120 m-5"
+              className="text-indigo-900 hover:text-transparent hover:bg-gradient-to-r hover:bg-clip-text hover:from-purple-500 hover:to-indigo-500 transition duration-300 transform hover:-translate-y-1 hover:scale-100"
             >
               ☰
             </button>
