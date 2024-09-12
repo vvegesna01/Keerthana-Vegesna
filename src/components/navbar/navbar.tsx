@@ -11,43 +11,73 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <main className="">
-      <div className="flex items-center justify-center min-h-auto bg-gray-200 p-5">
+    <main className="w-full">
+      <div className="flex flex-col md:flex-row items-center justify-between min-h-auto bg-gray-200 p-4 md:p-5 w-full">
+        {/* Logo or name */}
+        <a href="/" className="m-0 md:m-10">
+          <h1 className="text-localhost_text text-3xl md:text-5xl font-large font-extrabold mb-2 md:mb-4 transition duration-300 transform hover:-translate-y-1 hover:scale-100">
+            Keerthana Vegesna
+          </h1>
+        </a>
 
-      <a href="/" className="m-10">
-            <h1 className="text-localhost_text text-5xl font-large font-extrabold mb-4 transition duration-300 transform hover:-translate-y-1 hover:scale-100">
-              Keerthana Vegesna
-            </h1>
-          </a>
-        <div className="flex flex-col items-center m-10">
-          
-          <nav className="md:hidden">
-            <button
-              type="button"
-              onClick={toggleMobileMenu}
-              className="text-indigo-900 hover:text-transparent hover:bg-gradient-to-r hover:bg-clip-text hover:from-purple-500 hover:to-indigo-500 transition duration-300 transform hover:-translate-y-1 hover:scale-100"
+        {/* Hamburger Menu for Mobile */}
+        <nav className="md:hidden w-full flex justify-end pr-4">
+          <button
+            type="button"
+            onClick={toggleMobileMenu}
+            className="text-indigo-900 hover:text-transparent hover:bg-gradient-to-r hover:bg-clip-text hover:from-purple-500 hover:to-indigo-500 transition duration-300 transform hover:-translate-y-1 hover:scale-100"
+          >
+            ☰
+          </button>
+        </nav>
+
+        {/* Links */}
+        <ul
+          className={`${
+            isMobileMenuOpen ? "flex" : "hidden"
+          } flex-col md:flex md:flex-row items-center md:items-end w-full md:w-auto text-center space-y-4 md:space-y-0 md:space-x-8 mt-4 md:mt-0 text-localhost_text`}
+        >
+          <li>
+            <a
+              href="/about"
+              className="text-indigo-900 text-xl md:text-2xl hover:text-transparent hover:bg-gradient-to-r hover:bg-clip-text hover:from-purple-500 hover:to-indigo-500 transition duration-300 transform hover:-translate-y-1 hover:scale-120"
             >
-              ☰
-            </button>
-          </nav>
-          <ul className={`flex flex-col items-center ${isMobileMenuOpen ? 'flex' : 'hidden'} md:flex md:flex-row space-x-4 text-localhost_text`}>
-            <li>
-              <a href="/about" className="text-indigo-900 text-2xl hover:text-transparent hover:bg-gradient-to-r hover:bg-clip-text hover:from-purple-500 hover:to-indigo-500 transition duration-300 transform hover:-translate-y-1 hover:scale-120">ABOUT</a>
-            </li>
-            <li>
-              <a href="/projects" className="text-indigo-900 text-2xl hover:text-transparent hover:bg-gradient-to-r hover:bg-clip-text hover:from-purple-500 hover:to-indigo-500 transition duration-300 transform hover:-translate-y-1 hover:scale-120">PROJECTS</a>
-            </li>
-            <li>
-              <a href="/experience" className="text-indigo-900 text-2xl hover:text-transparent hover:bg-gradient-to-r hover:bg-clip-text hover:from-purple-500 hover:to-indigo-500 transition duration-300 transform hover:-translate-y-1 hover:scale-120">EXPERIENCE</a>
-            </li>
-            <li>
-              <a href="/bookshelf" className="text-indigo-900 text-2xl hover:text-transparent hover:bg-gradient-to-r hover:bg-clip-text hover:from-purple-500 hover:to-indigo-500 transition duration-300 transform hover:-translate-y-1 hover:scale-120">BOOKSHELF</a>
-            </li>
-            <li>
-              <a href="/contact" className="text-indigo-900 text-2xl hover:text-transparent hover:bg-gradient-to-r hover:bg-clip-text hover:from-purple-500 hover:to-indigo-500 transition duration-300 transform hover:-translate-y-1 hover:scale-120">CONTACT</a>
-            </li>
-          </ul>
-        </div>
+              ABOUT
+            </a>
+          </li>
+          <li>
+            <a
+              href="/projects"
+              className="text-indigo-900 text-xl md:text-2xl hover:text-transparent hover:bg-gradient-to-r hover:bg-clip-text hover:from-purple-500 hover:to-indigo-500 transition duration-300 transform hover:-translate-y-1 hover:scale-120"
+            >
+              PROJECTS
+            </a>
+          </li>
+          <li>
+            <a
+              href="/experience"
+              className="text-indigo-900 text-xl md:text-2xl hover:text-transparent hover:bg-gradient-to-r hover:bg-clip-text hover:from-purple-500 hover:to-indigo-500 transition duration-300 transform hover:-translate-y-1 hover:scale-120"
+            >
+              EXPERIENCE
+            </a>
+          </li>
+          <li>
+            <a
+              href="/bookshelf"
+              className="text-indigo-900 text-xl md:text-2xl hover:text-transparent hover:bg-gradient-to-r hover:bg-clip-text hover:from-purple-500 hover:to-indigo-500 transition duration-300 transform hover:-translate-y-1 hover:scale-120"
+            >
+              BOOKSHELF
+            </a>
+          </li>
+          <li>
+            <a
+              href="/contact"
+              className="text-indigo-900 text-xl md:text-2xl hover:text-transparent hover:bg-gradient-to-r hover:bg-clip-text hover:from-purple-500 hover:to-indigo-500 transition duration-300 transform hover:-translate-y-1 hover:scale-120"
+            >
+              CONTACT
+            </a>
+          </li>
+        </ul>
       </div>
     </main>
   );

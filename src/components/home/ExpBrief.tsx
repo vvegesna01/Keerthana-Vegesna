@@ -7,64 +7,79 @@ interface Experience {
   duration: string;
   company: string;
   role: string;
-  description: string[];
-  image: string; // Path to the image
+  image: string;
 }
 
 const ExperiencesBrief: React.FC = () => {
 
-	const experiences: Experience[] = [
-		{
-		  duration: "JUN 2022 - AUG 2022",
-		  company: "CUMMINS, INC",
-		  role: "Software Engineering Intern",
-		  description: ["Worked on the Data Acquisition team to implement monitoring systems for existing applications. Gained experience with AWS services including CloudWatch Alarms, S3 and Lambda Functions."],
-		  image: "/images/exp/cummins-logo-round.jpeg",
-		},
-		{
-		  duration: "AUG 2021 - JAN 2022",
-		  company: "THE DATA MINE - MERCK",
-		  role: "Undergraduate Data Science Researcher",
-		  description: ["Collaborated with Merck to create a web-based inventory tracking system using QR codes to optimize drug development. Worked on the backend team to setup a common database using AWS S3 and databricks to analyze the data. Helped come up with the solution architecture for the implementation."],
-		  image: "/images/exp/Merck.png",
-		},
-		{
-		  duration: "AUG 2021 - JAN 2022",
-		  company: "THE DATA MINE - PURDUE UNIVERSITY",
-		  role: "Undergraduate Teaching Assistant",
-		  description: ["Assisted over 600 students in The Data Mine during office hours. Helped students with assignments on Bash, SQL, Unix, R, Python and SQL"],
-		  image: "/images/exp/dm_dr_photo.jpeg",
-		},
-		// Add more experiences here...
-	];
+  const experiences: Experience[] = [
+    {
+      duration: "JAN 2024 - Present",
+      company: "JOHN MARTINSON HONORS COLLEGE",
+      role: "Web Developer",
+      image: "/images/exp/honors_logo.png",
+    },
+    {
+      duration: "JUN 2022 - AUG 2022",
+      company: "CUMMINS, INC",
+      role: "Software Engineering Intern",
+      image: "/images/exp/cummins-logo-round.jpeg",
+    },
+    {
+      duration: "AUG 2021 - JAN 2022",
+      company: "THE DATA MINE - MERCK",
+      role: "Undergraduate Data Science Researcher",
+      image: "/images/exp/Merck.png",
+    },
+    {
+      duration: "AUG 2021 - JAN 2022",
+      company: "THE DATA MINE",
+      role: "Undergraduate Teaching Assistant",
+      image: "/images/exp/dm_dr_photo.jpeg",
+    },
+    {
+      duration: "MAY 2021 - AUG 2021",
+      company: "PURDUE CS DEPARTMENT",
+      role: "UTA | CS Bridge Program",
+      image: "/images/exp/lawson_loop.jpg",
+    },
+  ];
 
   return (
-    <div className="flex justify-center py-8">
-      {experiences.map((experience, index) => (
-        <motion.div
-          key={index}
-          className="flex flex-col items-center"
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: index * 0.2 }}
-        >
-          <div className="overflow-hidden w-48 h-48 rounded">
-            <Image
-              src={experience.image}
-              alt="Experience"
-              layout="responsive"
-              width={192}
-              height={192}
-              objectFit="cover"
-            />
-          </div>
-          <div className="text-center mt-4">
-            <h2 className="text-lg font-bold text-gray-900">{experience.company}</h2>
-            <p className="text-sm text-gray-500">{experience.duration}</p>
-            <h3 className="text-base font-semibold text-gray-900">{experience.role}</h3>
-          </div>
-        </motion.div>
-      ))}
+    <div className="w-full py-8 px-4">
+      <h1 className="text-4xl font-bold text-indigo-900 text-center mb-8">Experience</h1>
+
+      {/* Carousel for All Screens */}
+      <motion.div
+        className="flex overflow-x-scroll space-x-4 m-10"
+        drag="x"
+        dragConstraints={{ left: -200 * experiences.length, right: 0 }}
+      >
+        {experiences.map((experience, index) => (
+          <motion.div
+            key={index}
+            className="flex-shrink-0 w-48 sm:w-60 bg-white border border-gray-300 rounded-lg shadow-md p-4 sm:p-6"
+            whileHover={{ scale: 1.05 }}
+          >
+            <div className="overflow-hidden rounded-lg mb-4">
+              <Image
+                src={experience.image}
+                alt={experience.company}
+                layout="responsive"
+                width={300}
+                height={200}
+                objectFit="cover"
+                className="rounded-lg"
+              />
+            </div>
+            <div className="text-center">
+              <h2 className="text-lg sm:text-xl font-bold text-gray-900">{experience.company}</h2>
+              <p className="text-sm sm:text-base text-gray-500 mb-2">{experience.duration}</p>
+              <h3 className="text-md sm:text-lg font-semibold text-indigo-900">{experience.role}</h3>
+            </div>
+          </motion.div>
+        ))}
+      </motion.div>
     </div>
   );
 };

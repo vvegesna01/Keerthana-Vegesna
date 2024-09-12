@@ -1,81 +1,84 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import Image from 'next/image';
+import { motion } from 'framer-motion';
+import { title } from "process";
 
-const ProjectCarousel: React.FC = () => {
+const ProjectsGallery: React.FC = () => {
   const projects = [
     {
       title: "Investogram",
       imageSrc: "/images/projects/Investogram_profile.png",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      link: "/projects"
+      link: "/projects",
+      skills: ["React", "Node.js", "MongoDB"]
     },
     {
       title: "Purdue PAL",
       imageSrc: "/images/projects/purduePAL.png",
-      description: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
-      link: "/projects"
+      link: "/projects",
+      skills: ["Python", "Flask", "PostgreSQL"]
+    },
+    {
+      title: "Eras Tour Tracker",
+      imageSrc: "/images/projects/eras_tour.png",
+      link: "/projects",
+      skills: ["Python", "Node.js", "Typescript" , "OpenStreetMaps"]
     },
   ];
 
-  const [currentProject, setCurrentProject] = React.useState(0);
-
-  const handleClickPrev = () => {
-    setCurrentProject((prevProject) => (prevProject === 0 ? projects.length - 1 : prevProject - 1));
-  };
-
-  const handleClickNext = () => {
-    setCurrentProject((prevProject) => (prevProject === projects.length - 1 ? 0 : prevProject + 1));
-  };
-
   return (
-    <div className="h-screen flex justify-center items-center">
-      <div className="w-1/2">
-        <h1 className="ml-20 text-3xl leading-10 animate-fadeIn font-extrabold text-indigo-900 hover:text-purple-500 transition-colors duration-300">Project Carousel</h1>
-        <div className="flex flex-col p-10 items-center">
-          <div className="relative w-4/5">
-            <button
-              className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-indigo-900 rounded-full p-3 hover:bg-gray-300 transition duration-300"
-              onClick={handleClickPrev}
+    <div className="w-full py-10 bg-gray-100 flex flex-col justify-center items-center">
+      <h1 className="text-4xl font-bold text-indigo-900 text-center mb-8">Featured Projects</h1>
+
+      <div className="w-full max-w-5xl px-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <motion.a
+              key={index}
+              href={project.link}
+              className="relative block bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
+              whileHover={{ scale: 1.02 }}
             >
-              Previous
-            </button>
-            <button
-              className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-indigo-900 rounded-full p-3 hover:bg-gray-300 transition duration-300"
-              onClick={handleClickNext}
-            >
-              Next
-            </button>
-            <div className="flex justify-center">
-              <div className="flex items-center space-x-12">
-                {projects.map((project, index) => (
-                  <div
-                    key={index}
-                    className={`flex flex-col items-center transition-all duration-300 ${
-                      index === currentProject ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full"
-                    }`}
-                  >
-                    <h2 className="text-2xl font-bold mb-4 text-black">{project.title}</h2>
-                    <div className="w-96 h-72">
-                      <Image
-                        src={project.imageSrc}
-                        alt={project.title}
-                        width={"400"}
-                        height={"300"}
-                        className="object-cover rounded-md"
-                      />
-                    </div>
-                    <p className="text-lg text-center text-black">{project.description}</p>
-                    <a href={project.link} className="mt-4 text-blue-500 hover:underline">View Project</a>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
+              {/* Project Title
+              <div className="p-4 text-center">
+                <h2 className="text-xl font-semibold text-white">{project.title}</h2>
+              </div> */}
+
+
+              {/* Project Image */}
+              <Image
+                src={project.imageSrc}
+                alt={project.title}
+                width={400}
+                height={300}
+                className="w-full h-48 object-cover"
+              />
+
+              
+
+              
+
+              {/* Skill Tags (Subtle, Minimal) */}
+              <motion.div
+                className="absolute bottom-0 left-0 right-0 flex justify-center p-2 bg-white opacity-0 hover:opacity-100 transition-opacity duration-300"
+              >
+                <div className="flex flex-wrap justify-center gap-2">
+                  {project.skills.map((skill, idx) => (
+                    <span
+                      key={idx}
+                      className="bg-indigo-900 text-white text-xs font-semibold px-2 py-1 rounded-lg shadow-sm"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </motion.div>
+            </motion.a>
+          ))}
         </div>
       </div>
     </div>
   );
 };
 
-export default ProjectCarousel;
+export default ProjectsGallery;

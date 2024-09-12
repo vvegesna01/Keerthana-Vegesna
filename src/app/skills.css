@@ -1,0 +1,37 @@
+.skills-carousel {
+  width: 100%;
+  padding: 20px;
+  background-color: #f4f4f4;
+  overflow: hidden;
+}
+
+.skills-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #333;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.skill-item {
+  background-color: #fff;
+  margin: 5px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+  font-size: 1.2rem;
+  color: #555;
+  flex: 0 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: scale(1.1);
+}

@@ -5,7 +5,7 @@ const Projects: React.FC = () => {
   return (
     <div className="flex flex-col p-10">
       <div className="space-y-6">
-        <h1 className="text-4xl leading-10 ml-10 animate-fadeIn font-extrabold text-indigo-900 hover:text-purple-500 transition-colors duration-100">PROJECTS</h1>
+        <h1 className="text-4xl leading-10 ml-10 animate-fadeIn font-extrabold text-indigo-900 hover:text-purple-500 transition-colors duration-100">Projects</h1>
 
         {/* Investogram */}
         <div className="">

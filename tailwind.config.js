@@ -10,7 +10,12 @@ module.exports = {
       colors: {
         localhost_text: "#000000",
         purdue_color:"#CEB888",
-        links_color: "#88aace"
+        links_color: "#88aace",
+        linkedin_color: "#0077B5",
+        github_color: "#2dba4e",
+        gwc_color: "#43D6B9",
+        rtc_color: "#ff5900",
+        cummins_color: "#D02323"
 
       },
       animation: {

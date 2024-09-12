@@ -21,3 +21,107 @@ body {
   background: whitesmoke;
 }
 
+/* Skills Carousel */
+
+.skills-carousel {
+  width: 100%;
+  padding: 20px;
+  background-color: #f4f4f4;
+  overflow: hidden;
+}
+
+.skills-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #333;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.skills-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  animation: scroll 30s linear infinite;
+}
+
+.skill-item {
+  background-color: #fff;
+  margin: 5px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+  font-size: 1.2rem;
+  color: #555;
+  flex: 0 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: scale(1.1);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Highlight Animation on Home Page */
+
+.highlight-bg {
+  position: relative;
+  color: #4f46e5; /* Initial text color */
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.2em 0;
+  z-index: 1;
+}
+
+.highlight-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f3e8ff; /* Background highlight color */
+  z-index: -1;
+  transform: scaleX(0); /* Initially hidden */
+  transform-origin: left; /* Animation starts from the left */
+  transition: transform 0.4s ease; /* Smooth animation */
+}
+
+.highlight-bg:hover::before {
+  transform: scaleX(1); /* Fully expands the background */
+}
+
+.highlight-bg:hover {
+  color: #4f46e5; /* Text color stays the same or can change */
+}
+
+
+/* Experiences Brief Flip Cards */
+.perspective {
+  perspective: 1000px;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+  white-space: nowrap;
+}

@@ -1,13 +1,13 @@
 import UnderConstruction from "../constr";
 import Experiences from "@/components/about/experiences";
+import ExperiencesBrief from "@/components/home/ExpBrief";
 import React from "react";
 
 
 export default function Experience() {
 	return (
-		<div className="flex flex-col p-10">
-			{/* <UnderConstruction /> */}
-			<Experiences />
+		<div className="flex p-10">
+			<Experiences/>
 		</div>
 	)
 }
