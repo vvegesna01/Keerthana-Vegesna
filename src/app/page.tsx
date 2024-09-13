@@ -17,7 +17,7 @@ export default function Home() {
         {/* Text Section with Waving Hand and Arrow */}
         <div className="relative flex flex-col items-center mt-10">
           <h1 className="text-localhost_text text-xl leading-10 p-10 animate-fadeIn w-3/4 text-center">
-            I'm currently actively looking for full-time opportunities in
+            I&apos;m currently actively looking for full-time opportunities in
             <span className="highlight-bg"> Software Engineering</span>, 
             <span className="highlight-bg"> Data Analysis</span>{', '}
             and <span className="highlight-bg"> Geospatial Tech</span>.

@@ -44,7 +44,7 @@ const ProfileBrief: React.FC = () => {
           
           {/* Intro text with animated highlight on hover */}
           <h1 className="text-localhost_text text-2xl leading-10 mt-5 p-10 animate-fadeIn">
-            Hi! I&apos;m Keerthana. I’m passionate about using data visualization to make information more accessible <sup className="text-linkedin_color">& fun!</sup>{" "}, building cool websites, and documenting books I'm reading :D
+            Hi! I&apos;m Keerthana. I&apos;m passionate about using data visualization to make information more accessible <sup className="text-linkedin_color">and fun!</sup>{" "}, building cool websites, and documenting books I&apos;m reading!
             <br /><br />
             Take a peek at my{" "}
             <Link href="/projects">

@@ -26,7 +26,7 @@ export default function AboutMe() {
 
           <div className="flex flex-col p-5">
             <p className="text-localhost_text leading-8 text-lg py-3 animate-fadeIn">
-              Hi there! I&apos;m Keerthana. I enjoy coding and building fun websites. I got my Bachelor's Degree at{" "}
+              Hi there! I&apos;m Keerthana. I enjoy coding and building fun websites. I got my Bachelor&apos;s Degree at{" "}
               <Link href="https://www.purdue.edu/" className="text-purdue_color font-semibold underline transition duration-300 hover:text-blue-500">Purdue University</Link>{" "}
               studying Computer Science. Through the course of my degree, I have found a passion for using data visualization to make useful insights, building cool websites and also learning system design frameworks.
             </p>
@@ -47,7 +47,7 @@ export default function AboutMe() {
               <Link href="https://datamine.purdue.edu/corporate/merck/" className="text-links_color font-semibold underline transition duration-300 hover:text-blue-500">Merck</Link>{" "}
               through the{" "}
               <Link href="https://datamine.purdue.edu/corporate/" className="text-links_color font-semibold underline transition duration-300 hover:text-blue-500">The Data Mine Corporate Partner&apos;s Program</Link>.
-              I'm involved in communities that empower women in engineering like{" "}
+              I&apos;m involved in communities that empower women in engineering like{" "}
               <Link href="https://www.cs.purdue.edu/diversity/womens-history/girls-who-code.html" className="text-gwc_color font-semibold underline transition duration-300 hover:text-blue-500">Girls Who Code</Link>{", "}
               <Link href="https://rewritingthecode.org/" className="text-rtc_color font-semibold underline transition duration-300 hover:text-blue-500">Rewriting the Code</Link>{","} and the <Link href="https://swe.org/" className="text-links_color font-semibold underline transition duration-300 hover:text-blue-500">Society of Women Engineers</Link>{"."}
               
