@@ -8,7 +8,7 @@ const ProjectsGallery: React.FC = () => {
   const projects = [
     {
       title: "Investogram",
-      imageSrc: "public/images/projects/investogram_profile.png",
+      imageSrc: "/images/projects/investogram_profile.png",
       link: "/projects",
       skills: ["React", "Node.js", "MongoDB"]
     },

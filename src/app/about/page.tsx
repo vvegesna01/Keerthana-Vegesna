@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 // import profile_img from "/public/images/profile.jpg";
 import Link from "next/link";
@@ -7,20 +8,30 @@ import Photography from "@/components/about/photography";
 import Shelf from "../bookshelf/shelf";
 import Bookshelf from "../bookshelf/page";
 import BookDataDisplay from "@/components/bookshelf/BookData";
+import { motion } from "framer-motion";
 
 export default function AboutMe() {
   return (
     <main className="flex flex-col items-center justify-between min-h-screen p-10 bg-white">
+      
       <div className="flex flex-col items-center md:flex-row">
-        <Image
-          src="/images/profiles/grad_2023.jpg"
-          alt="profile_image"
-          width={350}
-          height={200}
-          className="w-1/2 m-5 object-fit animate-fadeIn p-5"
-        />
+      
+          <motion.div 
+            className="relative p-2 md:p-5 m-0 md:m-5 rounded-lg overflow-hidden"
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.3 }}
+          >
+            <Image
+              src="/images/profiles/grad_2023.jpg"
+              width={1000}
+              height={1000}
+              className="object-cover animate-fadeIn rounded-lg"
+              alt="Profile"
+            />
+          </motion.div>
+        
         <div>
-          <h1 className="text-4xl leading-10 ml-10 animate-fadeIn font-extrabold text-indigo-900 hover:text-purple-500 transition-colors duration-100">
+        <h1 className="text-4xl leading-5 p-5 ml-10 animate-fadeIn font-extrabold text-indigo-900 hover:text-purple-500 transition-colors duration-100">
             About Me
           </h1>
 

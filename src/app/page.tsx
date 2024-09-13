@@ -19,7 +19,7 @@ export default function Home() {
           <h1 className="text-localhost_text text-xl leading-10 p-10 animate-fadeIn w-3/4 text-center">
             I&apos;m currently actively looking for full-time opportunities in
             <span className="highlight-bg"> Software Engineering</span>, 
-            <span className="highlight-bg"> Data Analysis</span>{', '}
+            <span className="highlight-bg"> Data Analytics</span>{', '}
             and <span className="highlight-bg"> Geospatial Tech</span>.
             I would love to connect and grow my network, so reach out to me{' '}
             <Link href="/contact" className="text-links_color font-semibold underline transition duration-300 hover:text-blue-500">

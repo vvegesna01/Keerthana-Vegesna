@@ -14,14 +14,14 @@ const ProfileBrief: React.FC = () => {
         {/* Profile Image with hover effect */}
         <div className="md:w-1/4 w-full flex justify-center md:justify-start">
           <motion.div 
-            className="relative p-2 md:p-10 m-0 md:m-5 rounded-lg overflow-hidden"
+            className="relative p-2 md:p-5 m-0 md:m-5 rounded-lg overflow-hidden"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
           >
             <Image
               src="/images/profiles/profile_met_2024.jpg"
-              width={500}
-              height={500}
+              width={800}
+              height={800}
               className="object-cover animate-fadeIn rounded-lg"
               alt="Profile"
             />
@@ -30,7 +30,7 @@ const ProfileBrief: React.FC = () => {
         
         {/* Typewriter and Intro Text */}
         <div className="md:w-3/4">
-          <h1 className="align-center text-l leading-10 animate-fadeIn font-bold text-indigo-900 hover:text-purple-500 transition-colors duration-300">
+          <h1 className="align-center text-xl leading-10 animate-fadeIn font-bold text-indigo-900 hover:text-purple-500 transition-colors duration-300">
             <Typewriter
               words={['SOFTWARE ENGINEER', 'UNDERGRAD TA', 'MUSICIAN', 'WEB DEVELOPER', 'DATA ANALYST', 'UNDERGRAD RESEARCHER']}
               loop={true}

@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import Image from 'next/image';
 import { motion } from "framer-motion";
 
@@ -11,6 +11,7 @@ interface Experience {
 }
 
 const ExperiencesBrief: React.FC = () => {
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   const experiences: Experience[] = [
     {
@@ -45,12 +46,20 @@ const ExperiencesBrief: React.FC = () => {
     },
   ];
 
+  // Function to scroll to the right
+  const scrollRight = () => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({ left: 200, behavior: "smooth" });
+    }
+  };
+
   return (
-    <div className="w-full py-8 px-4">
+    <div className="w-full py-8 px-4 relative">
       <h1 className="text-4xl font-bold text-indigo-900 text-center mb-8">Experience</h1>
 
       {/* Carousel for All Screens */}
       <motion.div
+        ref={scrollRef}
         className="flex overflow-x-scroll space-x-4 m-10"
         drag="x"
         dragConstraints={{ left: -200 * experiences.length, right: 0 }}
@@ -80,6 +89,14 @@ const ExperiencesBrief: React.FC = () => {
           </motion.div>
         ))}
       </motion.div>
+
+      {/* Scroll Right Button */}
+      <button
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-indigo-900 text-white rounded-full p-3 hover:bg-indigo-700 transition duration-300"
+        onClick={scrollRight}
+      >
+        &#10095;
+      </button>
     </div>
   );
 };
