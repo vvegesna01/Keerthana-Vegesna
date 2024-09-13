@@ -20,7 +20,7 @@ const Shelf: React.FC = () => {
     { title: "Almond", image:"/images/almond.jpeg"},
     { title: "What We Fed to the Manticore", image:"/images/manticore.jpeg"},
     { title: "Yellowface", image:"/images/yellowface.png"},
-    { title: "Cyring in H Mart", image:"/images/hmart.jpeg"}
+    { title: "Crying in H Mart", image:"/images/hmart.jpeg"}
     // Add more books here
   ];
 

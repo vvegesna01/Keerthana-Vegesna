@@ -30,9 +30,9 @@ const ProfileBrief: React.FC = () => {
         
         {/* Typewriter and Intro Text */}
         <div className="md:w-3/4">
-          <h1 className="align-center text-3xl leading-10 ml-5 animate-fadeIn font-extrabold text-indigo-900 hover:text-purple-500 transition-colors duration-300">
+          <h1 className="align-center text-l leading-10 animate-fadeIn font-bold text-indigo-900 hover:text-purple-500 transition-colors duration-300">
             <Typewriter
-              words={['SOFTWARE ENGINEER', 'UNDERGRADUATE TEACHING ASSISTANT', 'MUSICIAN', 'WEB DEVELOPER', 'DATA ANALYST', 'UNDERGRAD RESEARCHER']}
+              words={['SOFTWARE ENGINEER', 'UNDERGRAD TA', 'MUSICIAN', 'WEB DEVELOPER', 'DATA ANALYST', 'UNDERGRAD RESEARCHER']}
               loop={true}
               cursor
               cursorStyle="|"
@@ -44,7 +44,7 @@ const ProfileBrief: React.FC = () => {
           
           {/* Intro text with animated highlight on hover */}
           <h1 className="text-localhost_text text-2xl leading-10 mt-5 p-10 animate-fadeIn">
-            Hi! I&apos;m Keerthana. I&apos;m passionate about using data visualization to make information more accessible <sup className="text-linkedin_color">and fun!</sup>{" "}, building cool websites, and documenting books I&apos;m reading!
+            Hi! I&apos;m Keerthana. I&apos;m passionate about using data visualization to make information more accessible <sup className="text-linkedin_color">^ and fun!</sup>{" "}, building cool websites, and documenting books I&apos;m reading!
             <br /><br />
             Take a peek at my{" "}
             <Link href="/projects">
@@ -54,7 +54,7 @@ const ProfileBrief: React.FC = () => {
             <Link href="/experience">
               <span className="highlight-bg">Experience</span>
             </Link>
-            {" "} pages to see what I’ve been up to!
+            {" "} pages to see what I&apos;ve been up to!
           </h1>
         </div>
       </div>
