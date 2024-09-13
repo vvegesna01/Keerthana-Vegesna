@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import { title } from "process";
 
 const Shelf: React.FC = () => {
   const books = [
@@ -14,6 +15,12 @@ const Shelf: React.FC = () => {
     { title: "The Vanishing Half", image: "/images/vanishing_half.png" },
     { title: "Educated", image: "/images/educated.png" },
     { title: "The Giver", image: "/images/giver.png" },
+    { title: "If We Were Villains", image:"/images/villians.jpeg"},
+    { title: "Bunny", image:"/images/bunny.jpeg"},
+    { title: "Almond", image:"/images/almond.jpeg"},
+    { title: "What We Fed to the Manticore", image:"/images/manticore.jpeg"},
+    { title: "Yellowface", image:"/images/yellowface.png"},
+    { title: "Cyring in H Mart", image:"/images/hmart.jpeg"}
     // Add more books here
   ];
 
