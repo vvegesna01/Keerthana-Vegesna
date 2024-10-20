@@ -8,7 +8,8 @@ import Photography from "@/components/about/photography";
 import Shelf from "../bookshelf/shelf";
 import Bookshelf from "../bookshelf/page";
 import BookDataDisplay from "@/components/bookshelf/BookData";
-import { motion } from "framer-motion";
+import { color, motion } from "framer-motion";
+import "src/app/skills.css";
 
 export default function AboutMe() {
   return (
@@ -37,10 +38,9 @@ export default function AboutMe() {
 
           <div className="flex flex-col p-5">
             <p className="text-localhost_text leading-8 text-lg py-3 animate-fadeIn">
-              Hi there! I&apos;m Keerthana. I enjoy coding and building fun websites. I got my Bachelor&apos;s Degree at{" "}
+              Hi there! I&apos;m Keerthana. <br></br> <br></br>I got my Bachelor&apos;s Degree at{" "}
               <Link href="https://www.purdue.edu/" className="text-purdue_color font-semibold underline transition duration-300 hover:text-blue-500">Purdue University</Link>{" "}
-              studying Computer Science. Through the course of my degree, I have found a passion for using data visualization to make useful insights, building cool websites and also learning system design frameworks.
-            </p>
+              studying Computer Science. I specialize in building scalable, user-centric solutions with experience in <span className="highlight-bg">cloud technologies</span>, <span className="highlight-bg">front-end development</span>, and <span className="highlight-bg">data-driven research.</span></p> 
             <p className="text-localhost_text leading-8 text-lg py-3 animate-fadeIn">I&apos;m currently working for the <Link href="https://honors.purdue.edu/" className="text-purdue_color font-semibold underline transition duration-300 hover:text-blue-500">Purdue John Martinson Honors College</Link>{" "}
              this year to maintain, update and redesign their websites. Check out some examples of my work               <Link href="https://honors.purdue.edu/current-students/global/Global%20and%20Local%20Learning.php" className="text-purdue_color font-semibold underline transition duration-300 hover:text-blue-500">here!</Link>{" "}
              </p>

@@ -13,10 +13,10 @@ const ProjectsGallery: React.FC = () => {
       skills: ["React", "Node.js", "MongoDB"]
     },
     {
-      title: "Purdue PAL",
-      imageSrc: "/images/projects/purduePAL.png",
+      title: "Shelf This",
+      imageSrc: "/images/projects/shelf_this.png",
       link: "/projects",
-      skills: ["Python", "Flask", "PostgreSQL"]
+      skills: ["Python", "Streamlit", "HTML/CSS"]
     },
     {
       title: "Eras Tour Tracker",

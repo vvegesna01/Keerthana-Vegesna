@@ -7,6 +7,34 @@ const Projects: React.FC = () => {
       <div className="space-y-6">
         <h1 className="text-4xl leading-10 ml-10 animate-fadeIn font-extrabold text-indigo-900 hover:text-purple-500 transition-colors duration-100">Projects</h1>
 
+
+      {/* Shelf This */}
+      <div className="">
+          <div className="flex flex-col sm:flex-row items-center">
+            <div className="w-full sm:w-1/2 mb-5 sm:mb-0">
+              <Image
+                src="/images/projects/shelf_this.png"
+                alt="Project"
+                height={600}
+                width={800}
+                className="object-cover rounded-md"
+              />
+            </div>
+            <div className="w-full sm:w-1/2 text-center sm:text-left text-localhost_text">
+              <div className="text-3xl font-semibold text-gray-700 m-10">Shelf This</div>
+              <ul className="text-localhost_text text-lg m-10 list-disc list-inside">
+                <li className="mb-2">A dashboard to visualise reading habits using imported goodreads/storygraphy data</li>
+                <li className="mb-2">Built with Streamlit and Python</li>
+                <li className="mb-2">Stats include Highest Rated Reads, Books by Format, Reading Pace metrics, and more.</li>
+              </ul>
+              <div className="flex space-x-4 m-10">
+                <a href="https://shelfthis.streamlit.app/" target="_blank" rel="noopener noreferrer" className="bg-indigo-900 text-white rounded-full py-2 px-4 border border-indigo-900 hover:bg-transparent hover:text-indigo-900 hover:border-indigo-900 transition duration-300">Go to Website</a>
+                <a href="https://github.com/vvegesna01/ShelfThis" className="bg-indigo-900 text-white rounded-full py-2 px-4 border border-indigo-900 hover:bg-transparent hover:text-indigo-900 hover:border-indigo-900 transition duration-300">Source Code </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Investogram */}
         <div className="">
           <div className="flex flex-col sm:flex-row items-center">
@@ -30,7 +58,7 @@ const Projects: React.FC = () => {
               </ul>
               <div className="flex space-x-4 m-10">
                 <a href="https://github.com/CS-407/Investogram-Frontend" target="_blank" rel="noopener noreferrer" className="bg-indigo-900 text-white rounded-full py-2 px-4 border border-indigo-900 hover:bg-transparent hover:text-indigo-900 hover:border-indigo-900 transition duration-300">Source Code</a>
-                <a href="https://docs.google.com/presentation/d/1m5OFbwTUwbOdZnJzoAFLw9boNMa-b-4CzSh_a33uPkQ/edit" className="bg-indigo-900 text-white rounded-full py-2 px-4 border border-indigo-900 hover:bg-transparent hover:text-indigo-900 hover:border-indigo-900 transition duration-300">Demo Slides</a>
+                <a href="https://docs.google.com/presentation/d/1m5OFbwTUwbOdZnJzoAFLw9boNMa-b-4CzSh_a33uPkQ" className="bg-indigo-900 text-white rounded-full py-2 px-4 border border-indigo-900 hover:bg-transparent hover:text-indigo-900 hover:border-indigo-900 transition duration-300">Demo Slides</a>
               </div>
             </div>
           </div>

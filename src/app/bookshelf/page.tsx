@@ -10,7 +10,7 @@ export default function Bookshelf() {
     <p className="text-localhost_text leading-8 text-lg py-3 animate-fadeIn m-3">
 	  	These are some of my favourite reads. Here&apos;s a link to my {" "}
 		  <Link
-        href="https://www.notion.so/keeths-books/Books-Keeth-Reads-78bf534fab6d44848073459ad421e91e"
+        href="https://shelfthis.streamlit.app/"
         className="text-xl text-links_color underline hover:text-transparent hover:bg-gradient-to-r hover:bg-clip-text hover:from-purple-500 hover:to-indigo-500 transition transform hover:-translate-y-1 hover:scale-100"
       >reading website</Link> {" "} where I document all the books I read and my self-imposed reading challenges!
       </p>

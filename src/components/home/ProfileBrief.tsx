@@ -43,9 +43,8 @@ const ProfileBrief: React.FC = () => {
           </h1>
           
           {/* Intro text with animated highlight on hover */}
-          <h1 className="text-localhost_text text-2xl leading-10 mt-5 p-10 animate-fadeIn">
-            Hi! I&apos;m Keerthana. I&apos;m passionate about using data visualization to make information more accessible <sup className="text-linkedin_color">^ and fun!</sup>{" "}, building cool websites, and documenting books I&apos;m reading!
-            <br /><br />
+          <h1 className="text-localhost_text text-xl leading-10 mt-5 p-1 animate-fadeIn">
+            Hi! I&apos;m Keerthana <span className="waving-hand">👋</span></h1><p className="text-localhost_text text-xl leading-10 mt-5 p-1 animate-fadeIn">I'm a Software Engineer with experience in cloud technologies, front-end development, and data-driven research.
             Take a peek at my{" "}
             <Link href="/projects">
               <span className="highlight-bg">Projects</span>
@@ -55,7 +54,7 @@ const ProfileBrief: React.FC = () => {
               <span className="highlight-bg">Experience</span>
             </Link>
             {" "} pages to see what I&apos;ve been up to!
-          </h1>
+          </p>
         </div>
       </div>
     </div>
