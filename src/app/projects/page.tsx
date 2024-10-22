@@ -81,7 +81,7 @@ const Projects: React.FC = () => {
             <div className="w-full sm:w-1/2 text-center sm:text-left text-localhost_text">
               <div className="text-3xl font-semibold text-gray-700 m-10">The Eras Tour Tracker</div>
               <ul className="text-localhost_text text-lg mt-2 list-disc list-inside m-10">
-                <li>A tracker for venues, openers, and song analytics for Taylor Swift's Eras Tour.</li>
+                <li>A tracker for venues, openers, and song analytics for Taylor Swift`&apos;`s Eras Tour.</li>
                 <li>Geo-coded data, React, Next.js frontend and OpenStreetMaps API.</li>
                 <li>Dynamic visual representation of tour locations, chronological data display, venue information, setlists,
                 openers, and multi-device accessibility.</li>
