@@ -41,26 +41,26 @@ export default function AboutMe() {
               Hi there! I&apos;m Keerthana. <br></br> <br></br>I got my Bachelor&apos;s Degree at{" "}
               <Link href="https://www.purdue.edu/" className="text-purdue_color font-semibold underline transition duration-300 hover:text-blue-500">Purdue University</Link>{" "}
               studying Computer Science. I specialize in building scalable, user-centric solutions with experience in <span className="highlight-bg">cloud technologies</span>, <span className="highlight-bg">front-end development</span>, and <span className="highlight-bg">data-driven research.</span></p> 
-            <p className="text-localhost_text leading-8 text-lg py-3 animate-fadeIn">I&apos;m currently working for the <Link href="https://honors.purdue.edu/" className="text-purdue_color font-semibold underline transition duration-300 hover:text-blue-500">Purdue John Martinson Honors College</Link>{" "}
-             this year to maintain, update and redesign their websites. Check out some examples of my work               <Link href="https://honors.purdue.edu/current-students/global/Global%20and%20Local%20Learning.php" className="text-purdue_color font-semibold underline transition duration-300 hover:text-blue-500">here!</Link>{" "}
+            <p className="text-localhost_text leading-8 text-lg py-3 animate-fadeIn">I&apos;m currently working for the <Link href="https://honors.purdue.edu/" className="text-uniform_color font-semibold underline transition duration-300 hover:text-blue-500">Purdue John Martinson Honors College</Link>{" "}
+             this year to maintain, update and redesign their websites. Check out some examples of my work               <Link href="https://honors.purdue.edu/current-students/global/Global%20and%20Local%20Learning.php" className="text-uniform_color font-semibold underline transition duration-300 hover:text-blue-500">here!</Link>{" "}
              </p>
             <p className="text-localhost_text leading-8 text-lg py-3 animate-fadeIn">
               I have been a Software Engineering Intern at{" "}
-              <Link href="https://www.cummins.com/" className="text-cummins_color font-semibold underline transition duration-300 hover:text-blue-500">Cummins, Inc</Link>{" "}
+              <Link href="https://www.cummins.com/" className="text-uniform_color font-semibold underline transition duration-300 hover:text-blue-500">Cummins, Inc</Link>{" "}
               and also an Undergraduate Teaching Assistant for{" "}
-              <Link href="https://datamine.purdue.edu/" className="text-links_color font-semibold underline transition duration-300 hover:text-blue-500">The Data Mine</Link>{" "}
+              <Link href="https://datamine.purdue.edu/" className="text-uniform_color font-semibold underline transition duration-300 hover:text-blue-500">The Data Mine</Link>{" "}
               and for the{" "}
-              <Link href="https://www.cs.purdue.edu/undergraduate/bridge/" className="text-purdue_color font-semibold underline transition duration-300 hover:text-blue-500">CS Bridge Program</Link>{" "}
+              <Link href="https://www.cs.purdue.edu/undergraduate/bridge/" className="text-uniform_color font-semibold underline transition duration-300 hover:text-blue-500">CS Bridge Program</Link>{" "}
               at Purdue.
             </p>
             <p className="text-localhost_text leading-8 text-lg py-3 animate-fadeIn">
               I have also had the opportunity to contribute as an Undergraduate Student Researcher for{" "}
-              <Link href="https://datamine.purdue.edu/corporate/merck/" className="text-links_color font-semibold underline transition duration-300 hover:text-blue-500">Merck</Link>{" "}
+              <Link href="https://datamine.purdue.edu/corporate/merck/" className="text-uniform_color font-semibold underline transition duration-300 hover:text-blue-500">Merck</Link>{" "}
               through the{" "}
-              <Link href="https://datamine.purdue.edu/corporate/" className="text-links_color font-semibold underline transition duration-300 hover:text-blue-500">The Data Mine Corporate Partner&apos;s Program</Link>.
+              <Link href="https://datamine.purdue.edu/corporate/" className="text-uniform_color font-semibold underline transition duration-300 hover:text-blue-500">The Data Mine Corporate Partner&apos;s Program</Link>.
               I&apos;m involved in communities that empower women in engineering like{" "}
-              <Link href="https://www.cs.purdue.edu/diversity/womens-history/girls-who-code.html" className="text-gwc_color font-semibold underline transition duration-300 hover:text-blue-500">Girls Who Code</Link>{", "}
-              <Link href="https://rewritingthecode.org/" className="text-rtc_color font-semibold underline transition duration-300 hover:text-blue-500">Rewriting the Code</Link>{","} and the <Link href="https://swe.org/" className="text-links_color font-semibold underline transition duration-300 hover:text-blue-500">Society of Women Engineers</Link>{"."}
+              <Link href="https://www.cs.purdue.edu/diversity/womens-history/girls-who-code.html" className="text-uniform_color font-semibold underline transition duration-300 hover:text-blue-500">Girls Who Code</Link>{", "}
+              <Link href="https://rewritingthecode.org/" className="text-uniform_color font-semibold underline transition duration-300 hover:text-blue-500">Rewriting the Code</Link>{","} and the <Link href="https://swe.org/" className="text-uniform_color font-semibold underline transition duration-300 hover:text-blue-500">Society of Women Engineers</Link>{"."}
               
             </p>
             <p className="text-localhost_text leading-8 text-lg py-3 animate-fadeIn">

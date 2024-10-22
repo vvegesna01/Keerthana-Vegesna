@@ -21,13 +21,13 @@ const Contact: React.FC = () => {
       {isClient && (
         <div className="pdf-preview">
           <iframe
-            src="/files/resume_2024.pdf#toolbar=0"
+            src="/files/website_2024.pdf#toolbar=0"
             width="100%"
             height="1000px"
             className="border"
           >
             This browser does not support PDFs. Please download the PDF to view it:{" "}
-            <a href="/files/resume_2024.pdf">Download PDF</a>.
+            <a href="/files/website_2024.pdf">Download PDF</a>.
           </iframe>
         </div>
       )}
@@ -35,7 +35,7 @@ const Contact: React.FC = () => {
       {/* PDF Download Link */}
       <div className="pt-6">
         <a
-          href="/files/resume_2024.pdf"
+          href="/files/website_2024.pdf"
           download
           className="text-blue-500 underline hover:text-blue-700 font-semibold"
         >

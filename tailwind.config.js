@@ -11,6 +11,7 @@ module.exports = {
         localhost_text: "#000000",
         purdue_color:"#CEB888",
         links_color: "#88aace",
+        uniform_color: "#486bb0",
         linkedin_color: "#0077B5",
         github_color: "#2dba4e",
         gwc_color: "#43D6B9",
