@@ -21,7 +21,7 @@ const Experiences: React.FC = () => {
         "Optimized websites for mobile and desktop platforms, ensuring responsiveness and cross-browser compatibility.",
         "Maintained and updated websites for Purdue Honors College, ensuring usability and accessibility."
       ],
-      image: "/images/exp/honors_image.png",
+      image: "/images/exp/honors_image.jpg",
     },
     {
       duration: "JUN 2022 - AUG 2022",

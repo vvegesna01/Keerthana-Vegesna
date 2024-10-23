@@ -18,7 +18,7 @@ const ExperiencesBrief: React.FC = () => {
       duration: "JAN 2024 - Present",
       company: "JOHN MARTINSON HONORS COLLEGE",
       role: "Web Developer",
-      image: "/images/exp/honors_logo.png",
+      image: "/images/exp/honors_image.jpg",
     },
     {
       duration: "JUN 2022 - AUG 2022",
