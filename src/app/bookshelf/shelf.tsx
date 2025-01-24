@@ -13,6 +13,7 @@ const Shelf: React.FC = () => {
     { title: "Ove", image: "/images/ove.png" },
     { title: "Red-Haired Woman", image: "/images/red_haired_woman.png" },
     { title: "The Vanishing Half", image: "/images/vanishing_half.png" },
+    { title: "Do You Know Your Book Quotes?", image:"/images/thegame.png"},
     { title: "Educated", image: "/images/educated.png" },
     { title: "The Giver", image: "/images/giver.png" },
     { title: "If We Were Villains", image:"/images/villians.jpeg"},
@@ -20,7 +21,8 @@ const Shelf: React.FC = () => {
     { title: "Almond", image:"/images/almond.jpeg"},
     { title: "What We Fed to the Manticore", image:"/images/manticore.jpeg"},
     { title: "Yellowface", image:"/images/yellowface.png"},
-    { title: "Crying in H Mart", image:"/images/hmart.jpeg"}
+    { title: "Crying in H Mart", image:"/images/hmart.jpeg"},
+
     // Add more books here
   ];
 
