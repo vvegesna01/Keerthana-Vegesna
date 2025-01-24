@@ -2,17 +2,67 @@
 import ExperiencesBrief from '@/components/home/ExpBrief';
 import ProfileBrief from '@/components/home/ProfileBrief';
 import ProjectsGallery from '@/components/home/ProjectsBrief';
+
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
+const fadeInVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+};
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col justify-between p-10">
+    <main className="flex min-h-screen flex-col justify-between p-10 overflow-x-hidden">
       <div>
-        <ProfileBrief />
-        <ExperiencesBrief />
-        <ProjectsGallery />
+{/* Scroll Buttons */}
+<div className="fixed right-5 top-1/2 transform -translate-y-1/2 flex flex-col space-y-4 sm:space-y-3 md:space-y-4">
+  <button
+    onClick={() => document.getElementById('profile')?.scrollIntoView({ behavior: 'smooth' })}
+    className="w-4 h-4 bg-indigo-900 rounded-full shadow-lg transition-colors duration-300 hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-600"
+  />
+  <button
+    onClick={() => document.getElementById('experience')?.scrollIntoView({ behavior: 'smooth' })}
+    className="w-4 h-4 bg-indigo-900 rounded-full shadow-lg transition-colors duration-300 hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-600"
+  />
+  <button
+    onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+    className="w-4 h-4 bg-indigo-900 rounded-full shadow-lg transition-colors duration-300 hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-600"
+  />
+</div>
+
+
+
+        <motion.div
+          id="profile"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={fadeInVariants}
+        >
+          <ProfileBrief />
+        </motion.div>
+
+        <motion.div
+        id="experience"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={fadeInVariants}
+        >
+          <ExperiencesBrief />
+
+        </motion.div>
+        <motion.div
+        id="projects"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={fadeInVariants}
+        >
+          <ProjectsGallery />
+        </motion.div>
 
         {/* Text Section with Waving Hand and Arrow */}
         <div className="relative flex flex-col items-center mt-10">

@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
-import Shelf from "./shelf";
+import Shelf from "./new_shelf";
+import BookQuoteMatch from "./bookQuoteMatch";
+
 
 export default function Bookshelf() {
 	return (
@@ -14,6 +16,7 @@ export default function Bookshelf() {
         className="text-xl text-links_color underline hover:text-transparent hover:bg-gradient-to-r hover:bg-clip-text hover:from-purple-500 hover:to-indigo-500 transition transform hover:-translate-y-1 hover:scale-100"
       >reading website</Link> {" "} where I document all the books I read and my self-imposed reading challenges!
       </p>
+      <BookQuoteMatch/>
     <Shelf/>
     
   </div>

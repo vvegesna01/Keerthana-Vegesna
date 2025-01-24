@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Image from 'next/image';
 import { motion } from "framer-motion";
 
@@ -12,6 +12,7 @@ interface Experience {
 
 const ExperiencesBrief: React.FC = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
+  const [inView, setInView] = useState<boolean[]>(new Array(5).fill(false));
 
   const experiences: Experience[] = [
     {
@@ -53,19 +54,50 @@ const ExperiencesBrief: React.FC = () => {
     }
   };
 
-    // Function to scroll to the left
-    const scrollLeft = () => {
-      if (scrollRef.current) {
-        scrollRef.current.scrollBy({ left: -200, behavior: "smooth" });
-      }
+  // Function to scroll to the left
+  const scrollLeft = () => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({ left: -200, behavior: "smooth" });
+    }
+  };
+
+  // Detecting when the items come into view using IntersectionObserver
+  useEffect(() => {
+    const options = {
+      rootMargin: "0px 0px -50px 0px", // Trigger when 50% of the element is in view
     };
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          setInView((prevState) => {
+            const newState = [...prevState];
+            newState[index] = true;
+            return newState;
+          });
+        }
+      });
+    }, options);
+
+    const elements = scrollRef.current?.children;
+    if (elements) {
+      Array.from(elements).forEach((element, index) => {
+        observer.observe(element);
+      });
+    }
+
+    return () => {
+      // Clean up observer
+      observer.disconnect();
+    };
+  }, []);
 
   return (
     <div className="w-full py-8 px-4 relative">
       <h1 className="text-4xl font-bold text-indigo-900 text-center mb-8">Experience</h1>
 
       {/* Scroll Left Button */}
-            <button
+      <button
         className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-indigo-900 text-white rounded-full p-3 hover:bg-indigo-700 transition duration-300"
         onClick={scrollLeft}
       >
@@ -84,6 +116,16 @@ const ExperiencesBrief: React.FC = () => {
             key={index}
             className="flex-shrink-0 w-48 sm:w-60 bg-white border border-gray-300 rounded-lg shadow-md p-4 sm:p-6"
             whileHover={{ scale: 1.05 }}
+            initial={{ opacity: 0 }}
+            animate={{
+              opacity: inView[index] ? 1 : 0,
+              y: inView[index] ? 0 : 30, // Animate the Y position to create a rising effect
+              transition: {
+                duration: 1, // Increase duration for slower transition
+                delay: inView[index] ? index * 0.3 : 0, // Add delay based on the index for staggered effect
+                ease: "easeOut",
+              },
+            }}
           >
             <div className="overflow-hidden rounded-lg mb-4">
               <Image
